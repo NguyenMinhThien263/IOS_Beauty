@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		96435A3F28268C2100CB51BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96435A3E28268C2100CB51BC /* AppDelegate.swift */; };
-		96435A4128268C2100CB51BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96435A4028268C2100CB51BC /* ViewController.swift */; };
+		96435A4128268C2100CB51BC /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96435A4028268C2100CB51BC /* HomeController.swift */; };
 		96435A4428268C2100CB51BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96435A4228268C2100CB51BC /* Main.storyboard */; };
 		96435A4628268C2600CB51BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96435A4528268C2600CB51BC /* Assets.xcassets */; };
 		96435A4928268C2600CB51BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96435A4728268C2600CB51BC /* LaunchScreen.storyboard */; };
 		96435A5428268C2600CB51BC /* IOS_BeautySellingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96435A5328268C2600CB51BC /* IOS_BeautySellingTests.swift */; };
 		96435A5F28268C2700CB51BC /* IOS_BeautySellingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96435A5E28268C2700CB51BC /* IOS_BeautySellingUITests.swift */; };
+		96639DAA282A933000B43386 /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96639DA9282A933000B43386 /* CategoriesController.swift */; };
+		96639DAC282A950600B43386 /* LikedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96639DAB282A950600B43386 /* LikedController.swift */; };
+		96639DAE282A952500B43386 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96639DAD282A952500B43386 /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		96435A3B28268C2100CB51BC /* IOS_BeautySelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_BeautySelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96435A3E28268C2100CB51BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96435A4028268C2100CB51BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96435A4028268C2100CB51BC /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		96435A4328268C2100CB51BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96435A4528268C2600CB51BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96435A4828268C2600CB51BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		96435A5A28268C2700CB51BC /* IOS_BeautySellingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_BeautySellingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96435A5E28268C2700CB51BC /* IOS_BeautySellingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_BeautySellingUITests.swift; sourceTree = "<group>"; };
 		96435A6028268C2700CB51BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96639DA9282A933000B43386 /* CategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesController.swift; sourceTree = "<group>"; };
+		96639DAB282A950600B43386 /* LikedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedController.swift; sourceTree = "<group>"; };
+		96639DAD282A952500B43386 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		96435A3D28268C2100CB51BC /* IOS_BeautySelling */ = {
 			isa = PBXGroup;
 			children = (
-				96435A4028268C2100CB51BC /* ViewController.swift */,
+				96435A4028268C2100CB51BC /* HomeController.swift */,
+				96639DA9282A933000B43386 /* CategoriesController.swift */,
 				96435A4228268C2100CB51BC /* Main.storyboard */,
+				96639DAB282A950600B43386 /* LikedController.swift */,
+				96639DAD282A952500B43386 /* SettingsController.swift */,
 				96435A6C28268C4D00CB51BC /* SystemsFiles */,
 			);
 			path = IOS_BeautySelling;
@@ -264,7 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96435A4128268C2100CB51BC /* ViewController.swift in Sources */,
+				96639DAA282A933000B43386 /* CategoriesController.swift in Sources */,
+				96639DAE282A952500B43386 /* SettingsController.swift in Sources */,
+				96639DAC282A950600B43386 /* LikedController.swift in Sources */,
+				96435A4128268C2100CB51BC /* HomeController.swift in Sources */,
 				96435A3F28268C2100CB51BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
